@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  saml-idp:
+    container_name: saml-idp
+    image: kristophjunge/test-saml-idp
+    environment:
+      SIMPLESAMLPHP_SP_ENTITY_ID: 'saml-poc'
+      SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE: 'http://localhost:4300/login/callback'
+    ports:
+      - 8080:8080
+      - 8443:8443
