@@ -48,5 +48,5 @@ app.post('/login/callback', passport.authenticate('samlStrategy'),
 );
 
 var server = app.listen(8001, function () {
-    console.log('Listening on port %d', server.address().port);
+    console.log('Listening on http://localhost:%d', server.address().port);
 });
