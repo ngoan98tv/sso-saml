@@ -8,3 +8,8 @@ $metadata['first-app'] = array(
     'AssertionConsumerService' => 'http://localhost:8000/login/callback',
     'SingleLogoutService' => 'http://localhost:8000',
 );
+
+$metadata['second-app'] = array(
+    'AssertionConsumerService' => 'http://localhost:8001/login/callback',
+    'SingleLogoutService' => 'http://localhost:8001',
+);
