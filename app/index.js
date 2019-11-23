@@ -47,12 +47,6 @@ app.post('/login/callback', passport.authenticate('samlStrategy'),
     }
 );
 
-app.get('/logout/callback', 
-    function(req, res) {
-        res.redirect('/');
-    }
-);
-
 var server = app.listen(8000, function () {
     console.log('Listening on port %d', server.address().port);
 });
